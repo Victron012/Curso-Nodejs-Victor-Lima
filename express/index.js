@@ -18,8 +18,6 @@ app.get('/ola/:cargo/:nome', function(req,res){
     res.send("<h1>Ola "+req.params.nome+"</h1>"+"<h2>Seu cargo e: "+req.params.cargo+"</h2>");
 });
 
-
-
 app.listen(8081,function(){
     console.log("Servidor rodando na url http://localhost:8081");
 });
