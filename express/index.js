@@ -3,11 +3,11 @@ const app = express();
 
 
 app.get("/", function(req, res){
-    res.send("Seja bem vindo ao meu app!")
+    res.sendFile(__dirname + "/src/pages/index.html")
 });
 
 app.get("/sobre", function(req, res){
-    res.send("Minha pagina sobre")
+    res.sendFile(__dirname + "/src/pages/sobre.html")
 });
 
 app.get("/blog", function(req, res){
